@@ -18,6 +18,8 @@ _posArr = [];
 
 COMMENT " Plot waypoint every 45 degrees in a circle. 8 waypoints in total. ";
 
+_stp = 360/8;
+
 for "_dir" from 0 to (360 - _stp) step _stp do 
 {
 	_posArr pushBack (_pos getPos [_rad, _dir]);
